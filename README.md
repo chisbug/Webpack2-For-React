@@ -6,6 +6,22 @@
 后期会逐步加入代码检查和代码测试功能</br>
 当然, 非常高兴能得到你的意见与建议
 
+### 文件目录: (仅作示例, 你可以根据个人喜好任意组织)
+* /src (不用我多说了吧)
+    > /components (组件文件夹)
+    > .babelrc (babel配置文件)
+    > actions.js (action文件)
+    > common.less (公共样式)
+    > index.html (模板文件,你可以根据个人需求修改它. 打包后的index.html将产生在dist文件夹)
+    > reducers.js (reducer文件)
+* /static (开发环境的 静态资源文件夹, 打包后将在dist文件夹生成生产环境的static文件夹)
+    > .babelrc (babel配置文件, 为什么有两个这玩意请参考webpack2官方文档中热加载那一块,底部有链接)
+    > .package.json
+    > README.md
+    > webpack.dev.config.js (开发环境配置)
+    > webpack.prod.config.js (生产环境配置)
+  
+
 ### 开发环境功能:
 *   模块热加载(HMR)
 *   source-map
