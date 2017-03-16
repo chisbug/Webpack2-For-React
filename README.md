@@ -1,6 +1,9 @@
 # 基于webpack2的React开发配置
 
-这是一套入门向的基于webpack2.2, react, react-router, redux 的小脚手架, 包含一个router和redux结合的小示例. 脚手架功能不算多, 但可以满足基本的开发需要, 当然, 我非常高兴能看到你的意见与建议.
+这是一套入门向的基于webpack2.2, react, react-router, redux 的小脚手架
+包含一个router和redux结合的小示例
+脚手架功能不算多, 但可以满足基本的开发需要
+当然, 非常高兴能看到你的意见与建议
 
 ### 开发环境功能
 *   模块热加载(HMR)
