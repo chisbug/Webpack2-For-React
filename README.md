@@ -15,11 +15,11 @@
     > index.html (模板文件,你可以根据个人需求修改它. 打包后的index.html将产生在dist文件夹)<br>
     > reducers.js (reducer文件)<br>
 + /static (开发环境的 静态资源文件夹, 打包后将在dist文件夹生成生产环境的static文件夹)
-    > .babelrc (babel配置文件, 为什么有两个这玩意请参考webpack2官方文档中热加载那一块,底部有链接)<br>
-    > .package.json <br>
-    > README.md <br>
-    > webpack.dev.config.js (开发环境配置) <br>
-    > webpack.prod.config.js (生产环境配置) <br>
++ .babelrc (babel配置文件, 为什么有两个这玩意请参考webpack2官方文档中热加载那一块,底部有链接)
++ .package.json 
++ README.md 
++ webpack.dev.config.js (开发环境配置) 
++ webpack.prod.config.js (生产环境配置) 
   
 
 ### 开发环境功能:
