@@ -55,4 +55,6 @@
 
 # :)
 ---------------------------------------
-参考: <a href="https://doc.webpack-china.org/concepts/">webpack2 中文文档</a>
+参考: <br>
+<a href="https://doc.webpack-china.org/concepts/">webpack2 中文文档</a><br>
+<a href="https://doc.webpack-china.org/guides/hmr-react/">webpack2 模块热替换文档</a>
