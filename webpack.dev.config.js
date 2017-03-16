@@ -78,13 +78,13 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         use: [
-          'url-loader?limit=10000'
+          'url-loader?limit=10240'
         ]
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         use: [
-          'url-loader?limit=10000'
+          'url-loader?limit=10240'
         ]
       }
     ],
@@ -97,7 +97,7 @@ module.exports = {
       开启全局的模块热替换(HMR)
       当模块热替换(HMR)时在浏览器控制台输出对用户更友好的模块名字信息
       AssetsPlugin插件可以生成映射output的文件带hash值的json文件
-      WebPlugin插件将output的js插入template生成index.html(开发环境下生成于内存中,生产环境才会真实生成html文件)
+      WebPlugin插件将output的js插入template生成index.html(开发环境下生成在express服务器上,生产环境才会真实生成html文件)
     */
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),

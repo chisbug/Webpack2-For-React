@@ -52,13 +52,13 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         use: [
-          'url-loader?limit=10000&publicPath=static/&outputPath=static/'
+          'url-loader?limit=10240&publicPath=static/&outputPath=static/'
         ]
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         use: [
-          'url-loader?limit=10000&publicPath=static/&outputPath=static/'
+          'url-loader?limit=10240&publicPath=static/&outputPath=static/'
         ]
       }
     ],
