@@ -8,7 +8,7 @@
 
 ### 文件目录: (仅作示例, 你可以根据个人喜好任意组织)
 * /src (不用我多说了吧)
-    > /components (组件文件夹)
+    > /components (组件文件夹)<br>
     > .babelrc (babel配置文件)
     > actions.js (action文件)
     > common.less (公共样式)
