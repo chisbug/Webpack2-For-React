@@ -7,7 +7,7 @@ import { Router, Route, hashHistory } from 'react-router'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import message from './reducers'
-import { sendMsg } from './actions'
+import { sendMsg } from 'Actions'
 import { AppContainer } from 'react-hot-loader'
 
 /* 引入公共样式 */

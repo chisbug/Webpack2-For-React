@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
-import { sendMsg } from '../actions'
+import { sendMsg } from 'Actions'
 import { connect } from 'react-redux'
 
 import css from './app.less'
@@ -27,7 +27,7 @@ class App extends Component {
   }
   render() {
     // 下面这张图小于10k, 将被转换为base64编码
-    const imgUrl = require("../../static/icon.png")
+    const imgUrl = require("Static/icon.png")
     return (
       <div className="wrapper">
         <h3>Webpack react react-router redux</h3>
