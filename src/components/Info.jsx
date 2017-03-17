@@ -15,7 +15,10 @@ class Info extends Component {
   }
 }
 
-/* 把store对象中msg的值通过react-redux提供的connect方法注入组件 */
+/* 
+  把store对象中msg的值通过react-redux提供的connect方法注入组件 
+  只要 Redux store 发生改变，mixState 函数就会被调用
+*/
 function mixState(store) {
   return {
     msg: store.msg

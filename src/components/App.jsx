@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import { sendMsg } from '../actions'
+import { connect } from 'react-redux'
 
 import css from './app.less'
 
@@ -18,11 +20,10 @@ class App extends Component {
     })
   }
   handleClick() {
-    /* 调用this.props.route上的事件句柄进行dispatch */
-    if( this.state.msg.trim() !== '' ){
-      this.props.route.onSendMsg(this.state.msg)
+    if( this.state.msg.trim() ){
+      this.props.dispatch(sendMsg(this.state.msg))
       this.refs.userInput.value = ''
-    } 
+    }
   }
   render() {
     // 下面这张图小于10k, 将被转换为base64编码
@@ -42,4 +43,5 @@ class App extends Component {
   }
 }
 
-export default App
+/* 只注入 dispatch，不监听 store */
+export default connect()(App)
