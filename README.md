@@ -6,7 +6,7 @@
 后期会逐步加入代码检查和代码测试功能</br>
 
 ### 文件目录: (仅作示例, 你可以根据个人喜好任意组织)
-+ /src (不用我多说了吧)
++ /src
     - /components (组件文件夹)<br>
     - .babelrc (babel配置文件)<br>
     - actions.js (action文件)<br>
