@@ -32,7 +32,7 @@ store.subscribe(function() {
 */
 const routes = (
   <div>
-    <Route path="/" component={App} onSendMsg={ msg => store.dispatch(sendMsg(msg))} />
+    <Route path="/" component={App} />
     <Route path="info" component={Info} />
   </div>
 )
