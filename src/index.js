@@ -26,10 +26,7 @@ store.subscribe(function() {
   console.info(store.getState())
 })
 
-/* 
-  路由表 
-  分离出来是因为: 使用了HMR后, 路由直接写到render里的话会报错
-*/
+/* routes */
 const routes = (
   <div>
     <Route path="/" component={App} />
@@ -39,7 +36,6 @@ const routes = (
 
 /*
   <Provider store>使组件层级中的 connect() 方法都能够获得 Redux store
-  组件中需要使用store里的值时, 可通过connect()方法获取 (参考Info组件)
 */
 const render = (Component) => {
   ReactDOM.render(
