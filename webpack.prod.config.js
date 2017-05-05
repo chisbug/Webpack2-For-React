@@ -65,6 +65,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+    alias: {
+      Actions: path.resolve(__dirname, 'src/actions'),
+      Static: path.resolve(__dirname, 'static')
+    }
   },
   plugins: [
     new webpack.optimize.UglifyJsPlugin({

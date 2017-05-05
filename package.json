@@ -16,6 +16,8 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-1": "^6.22.0",
     "css-loader": "^0.27.3",
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^6.10.3",
     "file-loader": "^0.10.1",
     "http-proxy-middleware": "^0.17.4",
     "less": "^2.7.2",
