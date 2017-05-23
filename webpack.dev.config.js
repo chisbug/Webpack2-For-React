@@ -1,10 +1,10 @@
 /*
   webpack 开发环境配置
 */
-const path = require('path')
-const webpack = require('webpack')
-const WebWebpackPlugin = require('web-webpack-plugin')
-const { WebPlugin, AutoWebPlugin } = WebWebpackPlugin
+const path = require('path');
+const webpack = require('webpack');
+const WebWebpackPlugin = require('web-webpack-plugin');
+const { WebPlugin, AutoWebPlugin } = WebWebpackPlugin;
 
 module.exports = {
   entry: [
@@ -43,7 +43,9 @@ module.exports = {
     hot: true,
     host: '0.0.0.0',
     contentBase: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
+    publicPath: '/',
+    disableHostCheck: true,
+    headers: { 'Access-Control-Allow-Origin': '*' }
   },
   module: {
     rules: [
@@ -87,7 +89,7 @@ module.exports = {
           'url-loader?limit=10240'
         ]
       }
-    ],
+    ]
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -110,5 +112,5 @@ module.exports = {
       requires: ['main'],
       template: './src/index.html'
     })
-  ],
+  ]
 };

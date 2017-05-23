@@ -1,11 +1,11 @@
 /*
   webpack 生产环境配置
 */
-const path = require('path')
-const webpack = require('webpack')
-const AssetsPlugin = require('assets-webpack-plugin')
-const WebWebpackPlugin = require('web-webpack-plugin')
-const { WebPlugin, AutoWebPlugin } = WebWebpackPlugin
+const path = require('path');
+const webpack = require('webpack');
+const AssetsPlugin = require('assets-webpack-plugin');
+const WebWebpackPlugin = require('web-webpack-plugin');
+const { WebPlugin, AutoWebPlugin } = WebWebpackPlugin;
 
 module.exports = {
   entry: {
